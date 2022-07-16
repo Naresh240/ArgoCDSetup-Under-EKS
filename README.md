@@ -31,6 +31,8 @@ kubectl create namespace argocd
 
 ```bash
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v1.8.3/manifests/install.yaml
+```
+
 ```Note：```
 The Argo CD community also provides an HA deployment method by running the command kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v1.8.3/manifests/ha/install.yaml. It’s for deployment in production.
 

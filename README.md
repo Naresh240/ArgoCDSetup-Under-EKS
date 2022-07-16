@@ -96,3 +96,12 @@ argocd app create nginx-application \
 3. Click it to see its details. You can also click the icon in the upper right corner to view its topology diagram
 
 ![image](https://user-images.githubusercontent.com/58024415/179357674-829e99af-c96c-4b8a-9fe6-d56328705da4.png)
+
+## CleanUp of Application
+
+```bash
+argocd app list
+argocd app delete nginx-application
+```
+
+![image](https://user-images.githubusercontent.com/58024415/179357837-20237643-9e73-44ee-92e2-b63024795dbc.png)

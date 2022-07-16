@@ -40,8 +40,6 @@ The Argo CD community also provides an HA deployment method by running the comma
 kubectl patch svc argocd-server -p '{"spec": {"type": "LoadBalancer"}}' -n argocd
 ```
 
-```Check ArgoCD in UI```
-
 4. Get service using following command
   
 ```bash

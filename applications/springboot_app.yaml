@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: springboot-helm
+  namespace: argocd
+spec:
+  project: springboot_proj
+  source:
+    repoURL: https://github.com/Naresh240/springboot-with-helm
+    targetRevision: master
+    path: springboothello
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: springboot
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

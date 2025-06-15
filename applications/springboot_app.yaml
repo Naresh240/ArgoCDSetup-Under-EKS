@@ -4,7 +4,7 @@ metadata:
   name: springboot-helm
   namespace: argocd
 spec:
-  project: springboot_proj
+  project: default
   source:
     repoURL: https://github.com/Naresh240/springboot-with-helm
     targetRevision: master
